@@ -8,7 +8,6 @@ dotenv.config();
 const authRoute = require('./routes/auth');
 const postRoute = require('./routes/posts');
 // connect to db
-//const temp= 'mongodb+srv://samar:samar123@cluster0.jucfy.mongodb.net/authentication?retryWrites=true&w=majority'
 mongoose.connect(process.env.DB_CONNECT,
     {
         useUnifiedTopology: true,
